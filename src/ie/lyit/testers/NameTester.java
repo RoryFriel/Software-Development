@@ -11,7 +11,8 @@ package ie.lyit.testers;
 import ie.lyit.hotel.Name;
 import java.util.ArrayList;
 
-public class NameTester{
+public class NameTester
+{
 	public static void main(String[] args) {
 		// Create a Name object called personA
 		Name personA = new Name();

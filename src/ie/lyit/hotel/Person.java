@@ -1,15 +1,21 @@
 package ie.lyit.hotel;
+import java.io.Serializable;
 
-public abstract class Person {
+
+public abstract class Person implements Serializable 
+{
+
 	protected Name name; // COMPOSITION - Person HAS-A name
 	protected String address;
 	protected String phoneNumber;
+	private static final long serialVersionUID = 1L;
 
 	// Default Constructor
 	// Called when object is created like this 
 	//   ==> Person pObj = new Person();
 	//   NOTE-This won't work because Person is abstract
-	public Person(){
+	public Person()
+	{
 	   name=new Name();
 	   address=null;
 	   phoneNumber=null;
@@ -28,7 +34,8 @@ public abstract class Person {
 	// ==> Calls Name's toString() to display name and
 	//		then displays address and phoneNumber
 	@Override  // Overrides Object toString()
-	public String toString(){
+	public String toString()
+	{
 		return name + "," + address + "," + phoneNumber;
 	}	
 	

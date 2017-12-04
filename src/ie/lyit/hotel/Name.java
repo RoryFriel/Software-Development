@@ -7,8 +7,13 @@
  * @version 1.0
 **/
 package ie.lyit.hotel;
+import java.io.Serializable;
 
-public class Name {
+
+public class Name implements Serializable 
+{
+	
+	private static final long serialVersionUID = 1L;
 	// Instance Variables
 	private String title;
 	private String firstName;	

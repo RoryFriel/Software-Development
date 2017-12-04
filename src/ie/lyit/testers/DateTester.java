@@ -59,7 +59,7 @@ public class DateTester{
 		setDayTo=15;setMonthTo=33;setYearTo=2017;
 		do {
 			try {
-				Date myDate2 = new Date(setDayTo,setMonthTo,setYearTo);
+				Date myDate = new Date(setDayTo,setMonthTo,setYearTo);
 			}
 			catch(IllegalArgumentException iEA){
 				System.out.println("Incorrect day, month or year.");

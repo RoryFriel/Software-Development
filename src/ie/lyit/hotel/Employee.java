@@ -45,7 +45,7 @@ public class Employee extends Person implements Payable {
 	// Calling Persons toString() method, and adding additional bits
 	@Override
     public String toString(){
-		return number + " " + super.toString() + " €" + salary;
+		return number + " " + super.toString() + " ï¿½" + salary;
 	}
 
 	// equals() method
@@ -99,7 +99,7 @@ public class Employee extends Person implements Payable {
 	@Override
 	public double incrementSalary(double incrementAmount) {
 		// add incrementAmount to, and return the new salary
-		// salary should not go over a maximum salary of €150,000
+		// salary should not go over a maximum salary of ï¿½150,000
 		salary += incrementAmount;
 		
 		if(salary > MAX_SALARY)
